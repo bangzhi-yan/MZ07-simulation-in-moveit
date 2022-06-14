@@ -1,5 +1,5 @@
 # MZ07-simulation-in-moveit
-MZ07 model in moveit simulator
+MZ07 model in moveit simulator  
 run urdf:  
 copy mz07 urdf folder into ~/catkin_ws/src  
 under ~/catkin_ws  
