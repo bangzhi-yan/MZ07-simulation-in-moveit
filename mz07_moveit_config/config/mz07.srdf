@@ -9,11 +9,11 @@
     <!--JOINTS: When a joint is specified, the child link of that joint (which will always exist) is automatically included-->
     <!--CHAINS: When a chain is specified, all the links along the chain (including endpoints) are included in the group. Additionally, all the joints that are parents to included links are also included. This means that joints along the chain and the parent joint of the base link are included in the group-->
     <!--SUBGROUPS: Groups can also be formed by referencing to already defined group names-->
-    <group name="Manipulator2">
+    <group name="manipulator07">
         <chain base_link="base_link" tip_link="Tool"/>
     </group>
     <!--GROUP STATES: Purpose: Define a named state for a particular group, in terms of joint values. This is useful to define states like 'folded arms'-->
-    <group_state name="original" group="Manipulator2">
+    <group_state name="origin" group="manipulator07">
         <joint name="J1" value="0"/>
         <joint name="J2" value="0"/>
         <joint name="J3" value="0"/>
@@ -21,10 +21,18 @@
         <joint name="J5" value="0"/>
         <joint name="J6" value="0"/>
     </group_state>
-    <group_state name="Forward" group="Manipulator2">
+    <group_state name="Forwards" group="manipulator07">
         <joint name="J1" value="0"/>
-        <joint name="J2" value="0.5067"/>
-        <joint name="J3" value="0.5637"/>
+        <joint name="J2" value="-0.7812"/>
+        <joint name="J3" value="1.0116"/>
+        <joint name="J4" value="0"/>
+        <joint name="J5" value="0"/>
+        <joint name="J6" value="0"/>
+    </group_state>
+    <group_state name="Backwards" group="manipulator07">
+        <joint name="J1" value="0"/>
+        <joint name="J2" value="0.8599"/>
+        <joint name="J3" value="-0.5991"/>
         <joint name="J4" value="0"/>
         <joint name="J5" value="0"/>
         <joint name="J6" value="0"/>
